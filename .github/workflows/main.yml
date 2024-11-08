@@ -23,10 +23,12 @@ jobs:
       - name: Run SonarQube Scanner
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          sonar-scanner 
+        run: 
+           C:\Users\Administrator\Desktop\Sonarqub\sonar-scanner-6.2.1.4610-windows-x64\bin\sonar-scanner.bat 
             -Dsonar.projectKey=Tp_sonar 
             -Dsonar.sources=. 
             -Dsonar.host.url=http://localhost:9000 
-            -Dsonar.login=<your_token>
+            -Dsonar.login=sqp_dd619bd8ebacb745b7ab4924517548376f4aed58
+            -X
+
 
