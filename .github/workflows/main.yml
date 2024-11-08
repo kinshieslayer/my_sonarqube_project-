@@ -24,9 +24,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          C:\Users\Administrator\Desktop\Sonarqub\sonar-scanner-6.2.1.4610-windows-x64\bin\sonar-scanner.bat \
-          -Dsonar.projectKey=Tp_sonar \
-          -Dsonar.sources=. \
-          -Dsonar.host.url=http://localhost:9000 \
-          -Dsonar.login=$SONAR_TOKEN \
-          -X
+          C:\Users\Administrator\Desktop\Sonarqub\sonar-scanner-6.2.1.4610-windows-x64\bin\sonar-scanner.bat -D"sonar.projectKey=my_sonarqube_project" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.token=sqp_1c00fdb988d87d0d55830518f5608636ddc46702"
