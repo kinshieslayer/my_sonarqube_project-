@@ -24,8 +24,9 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          sonar-scanner \
-            -Dsonar.projectKey=Tp_sonar \
-            -Dsonar.sources=. \
-            -Dsonar.host.url=http://localhost:9000 \
-            -Dsonar.login=$SONAR_TOKEN
+          sonar-scanner 
+            -Dsonar.projectKey=Tp_sonar 
+            -Dsonar.sources=. 
+            -Dsonar.host.url=http://localhost:9000 
+            -Dsonar.login=<your_token>
+
